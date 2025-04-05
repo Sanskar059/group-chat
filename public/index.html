@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="name">
+        <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20">
+    </div>
+    <ul class="message-container" id="message-container">
+        <!-- <li class="message-left">
+            <p class="message">
+                lorem ipsum
+                <span class="span">blue 3 april 10:50</span>
+            </p>
+        </li>
+        <li class="message-right">
+            <p class="message">
+                lorem ipsum
+                <span>green 3 april 10:50</span>
+            </p>
+        </li> -->
+        <li class="message-feedback">
+            <p class="feedback" id="feedback">
+                blue is typing a message
+            </p>
+        </li>
+    </ul>
+    <form class="message-form" id="message-form">
+        <input type="text" name="message" id="message-input" class="message-input">
+        <button type="submit" class="send-button">send</button>
+    </form>
+    <h3 id="total-client" class="total-client">total - client - 2</h3>
+</div>
+
+<script src = "/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

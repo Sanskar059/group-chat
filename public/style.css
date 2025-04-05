@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.main {
+    width: 400px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background: #0078ff;
+    color: white;
+}
+
+.name {
+    padding: 10px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #5a67d8;
+}
+
+.name-input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.name-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.message-container {
+    list-style: none;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #e6e6e6;
+}
+
+.message-left, .message-right {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.message-left {
+    align-self: flex-start;
+    background: #ffffff;
+    border-left: 5px solid #0078ff;
+}
+
+.message-right {
+    align-self: flex-end;
+    background: #dcf8c6;
+    border-right: 5px solid #34a853;
+}
+
+.span{
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.message-feedback {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.message-form {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #f1f1f1;
+}
+
+.send-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #0078ff;
+    color: white;
+    cursor: pointer;
+}
+
+.total-client {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+    font-size: 14px;
+}
